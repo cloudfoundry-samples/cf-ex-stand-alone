@@ -4,9 +4,8 @@ applications:
   memory: 32M
   instances: 1
   host: php-app
-  domain: 10.244.0.34.xip.io
   path: .
-  buildpack: http://192.168.0.6:5000/git/cf-php-build-pack
+  buildpack: https://github.com/dmikusa-pivotal/cf-php-build-pack.git
   no-route: true
   env:
     BP_DEBUG: True
