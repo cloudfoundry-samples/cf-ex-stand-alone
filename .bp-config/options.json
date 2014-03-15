@@ -1,0 +1,5 @@
+{
+    "WEB_SERVER": "none",
+    "DOWNLOAD_URL": "http://192.168.0.6:5001",
+    "PHP_VERSION": "5.4.26-dev"
+}
