@@ -1,2 +1,4 @@
 .git
 manifest.yml
+README.md
+*.swp
