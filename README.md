@@ -13,7 +13,7 @@ This is an example stand alone application.  It is simply a PHP script that runs
   cd cf-ex-stand-alone
   ```
 
-1. Edit the manifest.yml file.  Change the 'host' attribute to something unique.  Also, notice how the manifest file includes the `no-route: true` attribute.  
+1. Edit the manifest.yml file.  Change the 'host' attribute to something unique.  Also, notice how the [manifest file] includes the `no-route: true` attribute.  This is important because it instructs CloudFoundry that this application will not handle web requests, which means it will not expect the application to listen on VCAP_APP_PORT.
 
 1. Push it to CloudFoundry.
 
@@ -21,8 +21,11 @@ This is an example stand alone application.  It is simply a PHP script that runs
   cf push
   ```
 
-  Run `cf logs php-app`.  This should start to tail the logs and you should see the application generate a message every ten seconds.
+  Run `cf logs php-app`.  This should start to tail the logs and you should see the application generate a message every ten seconds.  The message will look like this.
 
+  ```
+  2014-03-16T08:21:23.03-0400 [App/0]   OUT 12:21:23 php-app | Current Time [12:21:22]
+  ```
 
 ### How It Works
 
@@ -35,4 +38,4 @@ When you push the application here's what happens.
 
 
 [PHP Build Pack]:https://github.com/dmikusa-pivotal/cf-php-build-pack
-
+[manifest file]:https://github.com/dmikusa-pivotal/cf-ex-stand-alone/blob/master/.bp-config/options.json#L2
