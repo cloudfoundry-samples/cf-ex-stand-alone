@@ -8,4 +8,4 @@ applications:
   buildpack: https://github.com/dmikusa-pivotal/cf-php-build-pack.git
   no-route: true
   env:
-    BP_DEBUG: True
+    BP_DEBUG: "True"
