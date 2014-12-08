@@ -1,3 +1,7 @@
 {
-    "WEB_SERVER": "none"
+    "WEB_SERVER": "none",
+    "ADDITIONAL_PREPROCESS_CMDS": [
+        "echo \"PATH: [$PATH]\"",
+        "env"
+    ]
 }
