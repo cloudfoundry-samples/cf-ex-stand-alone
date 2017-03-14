@@ -13,9 +13,9 @@ This is an example stand alone application and example of using CF tasks.  It is
   cd cf-ex-stand-alone
   ```
 
-1. Edit the manifest.yml file.  Change the 'host' attribute to something unique.  Also, notice how the [manifest file] includes the `no-route: true` and `health-check-type: process` attributes.  This is important because it instructs CloudFoundry that this application will not handle web requests, which means it will not expect the application to listen on $PORT.
+2. Edit the manifest.yml file.  Change the 'host' attribute to something unique.  Also, notice how the [manifest file] includes the `no-route: true` and `health-check-type: process` attributes.  This is important because it instructs CloudFoundry that this application will not handle web requests, which means it will not expect the application to listen on $PORT.
 
-1. Push it to CloudFoundry.
+3. Push it to CloudFoundry.
 
   ```bash
   cf push
@@ -27,7 +27,7 @@ This is an example stand alone application and example of using CF tasks.  It is
   2017-03-14T16:24:09.57-0400 [APP/PROC/WEB/0]OUT 20:24:09 php-app | Current Time From App [08:24:09]
   ```
 
-1. Run the task (optional).
+4. Run the task (optional).
 
   ```
   cf run-task php-app 'php task.php' --name 'php-task'
