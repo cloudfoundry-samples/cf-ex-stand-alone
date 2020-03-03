@@ -1,10 +1,7 @@
 ---
 applications:
-- name: php-app
+- name: cf-ex-stand-alone
   memory: 64M
-  instances: 1
-  host: php-app
-  path: .
   buildpack: php_buildpack
   no-route: true
   health-check-type: process
